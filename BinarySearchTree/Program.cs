@@ -22,10 +22,16 @@ namespace BinarySearchTree
         }
     }
 
-    
-    
-    
-       
+    class BinaryTree
+    {
+        ROOT = null; //instalizizng root to null
+    }
+
+
+
+
+
+
     class Program
     {
         /* A node  class consi
