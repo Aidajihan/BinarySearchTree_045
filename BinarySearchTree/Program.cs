@@ -31,7 +31,12 @@ namespace BinarySearchTree
         }
         public void insert(string element) //insert a node in the binary
         {
+            node top, parent = null, currentnode = null;
+            find(element, ref parent, ref currentnode);
+            if(currentnode != null)//
+            {
 
+            }
         }
        
     }
