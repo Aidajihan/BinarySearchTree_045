@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -78,6 +79,27 @@ namespace BinarySearchTree
                 Console.WriteLine("tree is empty");
                 return;
             }
+            if (ptr != null)
+            {
+                inorder(ptr.lchild);
+                Console.WriteLine(ptr.info + " ");
+                inorder(ptr.rchild);
+            }
+        }
+        public void preorder (node ptr)
+        {
+            if(ROOT == null)
+            {
+                Console.WriteLine("Tree is empty");
+                return;
+            }
+            if (ptr != null)
+            {
+                Console.WriteLine(ptr.info + "");
+                preorder(ptr.lchild);
+                preorder(ptr.rchild);
+            }
+
         }
     }
 
