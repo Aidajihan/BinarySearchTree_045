@@ -24,8 +24,19 @@ namespace BinarySearchTree
 
     class BinaryTree
     {
-        ROOT = null; //instalizizng root to null
+        public node ROOT;
+        public BinaryTree()
+        {
+            ROOT = null; //instalizizng root to null
+        }
+        public void insert(string element) //insert a node in the binary
+        {
+
+        }
+       
     }
+
+    
 
 
 
